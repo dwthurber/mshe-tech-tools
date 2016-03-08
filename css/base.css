@@ -1,0 +1,140 @@
+h1,h2,h3,h4,h5,p,a,li,blockquote {
+    font-family: arial;
+}
+
+h1 {
+   margin: 25px 0px; 
+   font-size: 2.5em;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 960px;
+    /*min-width: 500px;*/
+}
+
+.clearfix {
+    clear: both;
+}
+
+.title {
+    text-align: center;
+}
+
+.title-bar {
+    margin-bottom: 10px;
+    border: dashed 1px #aaa;
+    /*margin-top: -10px;*/
+}
+
+.flex-container {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;                        
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+}
+
+#Container .mix{
+	display: none;
+}
+
+.mix {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    box-shadow: 0px 0px 4px 0.5px #999;
+    background-color: #4e2a84;
+}
+
+.filter {
+    font-size: 0.8em;
+}
+
+.tags {
+    margin-bottom: 18px;
+    float: left;
+    width: 45%;
+}
+
+.tags > .filter {
+    display: inline-block;
+    position: relative;
+    margin: 5px 5px;
+    padding: 3px 20px 3px 6px;
+    background-color: #B4AACE;
+    border-top-left-radius:5px;
+    border-top-right-radius:50px;
+    border-bottom-right-radius:50px;
+    border-bottom-left-radius:5px;
+    box-shadow: 0px 0px 4px 0px #4e2a84;
+}
+
+.tags > .filter > .fa-o {
+    position: absolute;
+    right: 6px;
+    top: 7px;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+
+.active {
+    color: #fff;
+}
+
+.categories {
+    /*float: right;*/
+    width: 85%;
+    text-align: center;
+    margin: -10px auto 0 auto;
+}
+
+.categories > .filter {
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 3px 6px;
+    background-color: #999;
+    border-radius: 2px;
+    box-shadow: 0px 0px 4px 0px #333;
+}
+
+
+.filter:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 0px;
+}
+
+.search {
+    margin-bottom: 18px;
+    position: relative;
+    float: right;
+    width: 45%;
+    text-align: right;
+}
+
+.search > input {
+    width: 80%;
+    line-height: 1.4em;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 6px 0px;
+
+}
+
+.search > .fa-search {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: #4e2a84;
+    padding: 3px 4px;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 0.8em;
+}

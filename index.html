@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>MSHE Tehnology Tools and Resources</title>
+    <meta name="author" content="Derek Thurber">
+    <meta name="description" content="A Page on Technology Tools and Resources for the Master of Science in Higher Education Administration and Policy program in the School of Education and Social Policy at Northwestern University">
+    
+    <link rel="stylesheet" type="text/css" href="./css/reset.css"></link>
+    <link rel="stylesheet" type="text/css" href="./css/base.css"></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Technology Tools and Resources</h1>
+        <!--<div class="categories">-->
+        <!--    <div class="filter" data-filter=".research">RESEARCH</div>-->
+        <!--    <div class="filter" data-filter=".other">OTHER</div>-->
+        <!--</div>-->
+        <hr class="title-bar">
+        <div class="tags">
+            <div class="filter" data-filter=".data-collection">Data Collection<div class="fa-o"></div></div>
+            <div class="filter" data-filter=".category-2">Interviews<div class="fa-o"></div></div>
+            <div class="filter" data-filter=".category-2">Excel<div class="fa-o"></div></div>
+            <div class="filter" data-filter=".category-2">Presentation<div class="fa-o"></div></div>
+            <div class="filter" data-filter=".posters">Posters<div class="fa-o"></div></div>
+        </div>
+        
+        <div class="search">
+            <input type="text"> <i class="fa fa-search"></i>
+        </div>
+        
+        <br class="clearfix">
+        
+        <div id="Container" class="flex-container">
+            <div class="mix research data-collection" data-myorder="1">
+                <p>Research</p>
+                <p>Data Collection</p>
+            </div>
+            <div class="mix other" data-myorder="2"></div>
+            <div class="mix research posters" data-myorder="3">
+                <p>Research</p>
+                <p>Posters</p>
+            </div>
+            <div class="mix other" data-myorder="4"></div>
+        </div>
+    </div>
+	<script src="https://cdn.jsdelivr.net/jquery.mixitup/2.1.11/jquery.mixitup.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
