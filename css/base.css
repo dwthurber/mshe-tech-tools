@@ -1,9 +1,18 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #fff;
+}
+
 h1,h2,h3,h4,h5,p,a,li,blockquote {
     font-family: arial;
 }
 
 h1 {
-   margin: 25px 0px; 
+   /*margin: 25px 0px; */
    font-size: 2.5em;
 }
 
@@ -14,18 +23,71 @@ h1 {
     /*min-width: 500px;*/
 }
 
+.rotate {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+}
+
+#type-chevron, #category-chevron {
+    transition-duration: 0.5s;
+}
+
 .clearfix {
     clear: both;
 }
 
-.title {
-    text-align: center;
+.hidden {
+    display: none;
 }
 
-.title-bar {
-    margin-bottom: 10px;
-    border: dashed 1px #aaa;
-    /*margin-top: -10px;*/
+.hero {
+    background-color: #ddd;
+    padding: 20px 0px 20px 0px;
+}
+
+.filter-section {
+    /*min-height: 10px;*/
+    background-color: #333;
+    padding: 10px 0px;
+}
+
+.main {
+    padding-top: 15px;
+}
+
+.title {
+    text-align: left;
+    border-left: 3px solid #333;
+    padding-left: 10px;
+}
+
+.title h1 {
+    border-bottom: 1px solid #aaa;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+.title li {
+    display: inline-block;
+    margin: 7px 5px 0px 5px;
+    font-size: smaller;
+    color: #999;
+}
+
+.title li:first-child {
+    margin-left: 0px;
+}
+
+.title li:hover {
+    cursor: pointer;
+    color: #333;
+}
+
+.title i {
+    font-size: 0.6em
 }
 
 .flex-container {
@@ -44,56 +106,58 @@ h1 {
 }
 
 .mix {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: 10px;
-    box-shadow: 0px 0px 4px 0.5px #999;
-    background-color: #4e2a84;
+    /*box-shadow: 0px 0px 4px 0.5px #999;*/
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+}
+
+.mix h2 {
+    text-transform: uppercase;
+    color: #999;
+    margin: 20px 0px 10px 0px;
+    font-size: smaller;
+}
+
+.mix p {
+    color: #333;
+    font-size: small;
+    
+}
+
+.mix:hover .mix-hover {
+    display: block;
+}
+
+.mix-hover {
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.mix-hover p {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    font-size: 0.6em;
+    color: #fff;
+    text-align: right;
 }
 
 .filter {
     font-size: 0.8em;
 }
 
-.tags {
-    margin-bottom: 18px;
-    float: left;
-    width: 45%;
-}
-
-.tags > .filter {
-    display: inline-block;
-    position: relative;
-    margin: 5px 5px;
-    padding: 3px 20px 3px 6px;
-    background-color: #B4AACE;
-    border-top-left-radius:5px;
-    border-top-right-radius:50px;
-    border-bottom-right-radius:50px;
-    border-bottom-left-radius:5px;
-    box-shadow: 0px 0px 4px 0px #4e2a84;
-}
-
-.tags > .filter > .fa-o {
-    position: absolute;
-    right: 6px;
-    top: 7px;
-    width: 5px;
-    height: 5px;
-    background-color: #fff;
-    border-radius: 50%;
-}
-
-
 .active {
     color: #fff;
-}
-
-.categories {
-    /*float: right;*/
-    width: 85%;
-    text-align: center;
-    margin: -10px auto 0 auto;
 }
 
 .categories > .filter {
@@ -105,36 +169,7 @@ h1 {
     box-shadow: 0px 0px 4px 0px #333;
 }
 
-
 .filter:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 6px 0px;
-}
-
-.search {
-    margin-bottom: 18px;
-    position: relative;
-    float: right;
-    width: 45%;
-    text-align: right;
-}
-
-.search > input {
-    width: 80%;
-    line-height: 1.4em;
-    border-radius: 2px;
-    border: 1px solid #fff;
-    box-shadow: 0px 0px 6px 0px;
-
-}
-
-.search > .fa-search {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    background-color: #4e2a84;
-    padding: 3px 4px;
-    border-radius: 2px;
-    color: #fff;
-    font-size: 0.8em;
+    box-shadow: 0px 0px 6px 0px #fff;
 }

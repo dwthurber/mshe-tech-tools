@@ -13,31 +13,42 @@
 
 </head>
 <body>
+    <section class="hero">
     <div class="container">
-        <h1 class="title">Technology Tools and Resources</h1>
-        <!--<div class="categories">-->
-        <!--    <div class="filter" data-filter=".research">RESEARCH</div>-->
-        <!--    <div class="filter" data-filter=".other">OTHER</div>-->
-        <!--</div>-->
-        <hr class="title-bar">
-        <div class="tags">
+        <div class="title">
+            <h1>Technology Tools and Resources</h1>
+            <ul>
+                <li id="show-all" class="filter" data-filter="all">Show All</li>
+                <li id="type-button">Type <i id="type-chevron" class="fa fa-chevron-down"></i></li>
+                <li id="category-button">Category <i id="category-chevron" class="fa fa-chevron-down"></i></li>
+            </ul>
+        </div>
+    </div>
+    </section>
+    <section class="filter-section">
+        <div class="container">
+        <div id="type" class="categories hidden">
             <div class="filter" data-filter=".data-collection">Data Collection<div class="fa-o"></div></div>
             <div class="filter" data-filter=".category-2">Interviews<div class="fa-o"></div></div>
             <div class="filter" data-filter=".category-2">Excel<div class="fa-o"></div></div>
             <div class="filter" data-filter=".category-2">Presentation<div class="fa-o"></div></div>
             <div class="filter" data-filter=".posters">Posters<div class="fa-o"></div></div>
         </div>
-        
-        <div class="search">
-            <input type="text"> <i class="fa fa-search"></i>
+        <div id="category" class="categories hidden">
+            <div class="filter" data-filter=".research">Research</div>
+            <div class="filter" data-filter=".other">Other</div>
         </div>
-        
-        <br class="clearfix">
-        
+        </div>
+    </section>
+    <section class="main">
+    <div class="container">
         <div id="Container" class="flex-container">
             <div class="mix research data-collection" data-myorder="1">
-                <p>Research</p>
+                <h2>Research</h2>
                 <p>Data Collection</p>
+                <div class="mix-hover hidden">
+                    <p><i class="fa fa-tags"></i> Data Collection, Interviews, Presentation</p>
+                </div>
             </div>
             <div class="mix other" data-myorder="2"></div>
             <div class="mix research posters" data-myorder="3">
@@ -47,7 +58,9 @@
             <div class="mix other" data-myorder="4"></div>
         </div>
     </div>
+	</section>
 	<script src="https://cdn.jsdelivr.net/jquery.mixitup/2.1.11/jquery.mixitup.min.js"></script>
 	<script src="./js/main.js"></script>
+	
 </body>
 </html>
