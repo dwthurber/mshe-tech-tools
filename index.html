@@ -21,6 +21,7 @@
                 <li id="show-all" class="filter" data-filter="all">Show All</li>
                 <li id="type-button">Type <i id="type-chevron" class="fa fa-chevron-down"></i></li>
                 <li id="category-button">Category <i id="category-chevron" class="fa fa-chevron-down"></i></li>
+                <li id="search-button">Search <i id="search-chevron" class="fa fa-chevron-down"></i></li>
             </ul>
         </div>
     </div>
@@ -33,18 +34,22 @@
             <div class="filter" data-filter=".resources">Resources</div>
             <div class="filter" data-filter=".guides">Guides</div>
             <div class="filter" data-filter=".examples">Examples</div>
+            <div class="filter" data-filter=".templates">Templates</div>
         </div>
         <div id="category" class="categories hidden">
             <div class="filter" data-filter=".data-collection">Data Collection<div class="fa-o"></div></div>
+            <div class="filter" data-filter=".data-analysis">Data Analysis<div class="fa-o"></div></div>
             <div class="filter" data-filter=".surveys">Surveys<div class="fa-o"></div></div>
             <div class="filter" data-filter=".interviews">Interviews<div class="fa-o"></div></div>
             <div class="filter" data-filter=".stats">Statistics<div class="fa-o"></div></div>
             <div class="filter" data-filter=".spss">SPSS<div class="fa-o"></div></div>
-            <div class="filter" data-filter=".Nvivo">Nvivo<div class="fa-o"></div></div>
+            <div class="filter" data-filter=".nvivo">Nvivo<div class="fa-o"></div></div>
             <div class="filter" data-filter=".presentation">Presentations<div class="fa-o"></div></div>
             <div class="filter" data-filter=".posters">Posters<div class="fa-o"></div></div>
         </div>
-        
+        <div id="search" class="hidden">
+            <input type="text" placeholder="Start typing to search">
+        </div>
         </div>
     </section>
     <section class="main">
@@ -60,7 +65,7 @@
                 </a>
             </div>
             <div class="mix surveys data-collection technology" data-myorder="2">
-                <img src="./img/survey-monkey.png">
+                <img src="./img/survey-monkey.png" alt="survey monkey logo">
                 <h2>Survey Monkey</h2>
                 <a href="./pages/survey-monkey.html">
                     <div class="mix-hover hidden">
@@ -68,27 +73,65 @@
                     </div>
                 </a>
             </div>
-            <div class="mix research posters" data-myorder="3">
-                <h2>Research</h2>
-                <p>Posters</p>
-                <a href="text.html">
+            <div class="mix aids data-analysis" data-myorder="3">
+                <img src="./img/sheet.png" alt="document icon">
+                <h2>Data Analysis - Text</h2>
+                <a href="./assets/data-analysis-text.docx">
                     <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Data Collection, Interviews, Presentation</p>
+                        <p><i class="fa fa-tags"></i> Data Analysis</p>
+                        <i class="fa fa-download fa-3x action"></i>
                     </div>
                 </a>
             </div>
-            <div class="mix other" data-myorder="4">
-                <a href="text.html">
+            <div class="mix aids" data-myorder="4">
+                <img src="./img/sheet.png" alt="document icon">
+                <h2>MP Outline</h2>
+                <a href="./assets/mp-outline_2015-2016.docx">
                     <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Data Collection, Interviews, Presentation</p>
+                        <!--<p><i class="fa fa-tags"></i> Data Collection, Interviews, Presentation</p>-->
+                        <i class="fa fa-download fa-3x action"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="mix templates" data-myorder="5">
+                <img src="./img/sheet.png" alt="document icon">
+                <h2>MP APA Template</h2>
+                <a href="https://northwestern.box.com/shared/static/lgqwax92o5crl4xnenkn.docx">
+                    <div class="mix-hover hidden">
+                        <!--<p><i class="fa fa-tags"></i> Data Collection, Interviews, Presentation</p>-->
+                        <i class="fa fa-download fa-3x action"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="mix guides technology data-collection interviews" data-myorder="5">
+                <h2>Guide to Recording Interviews</h2>
+                <p>Tips to capture the best audio quality during interviews and suggestions for programs to use to record your interviews.</p>
+                <a href="./pages/recording-interviews">
+                    <div class="mix-hover hidden">
+                        <p><i class="fa fa-tags"></i> Data Collection, Interviews</p>
+                    </div>
+                </a>
+            </div>
+            <div class="mix technology data-analysis stats spss nvivo" data-myorder="5">
+                <img src="./img/remote-desktop-connection.png" alt="thin client icon">
+                <h2>Virtual Desktop</h2>
+                <a href="http://edtech.sesp.northwestern.edu/project/thin-client-virtual-machine/" target="_blank">
+                    <div class="mix-hover hidden">
+                        <p><i class="fa fa-tags"></i> Data Analysis, Statistics, SPSS, NVivo</p>
+                        <i class="fa fa-external-link fa-3x action"></i>
                     </div>
                 </a>
             </div>
         </div>
     </div>
 	</section>
+	<footer>
+	    <div class="container">
+	        <p>Designed by <strong>Derek Thurber</strong></p>
+	    </div>
+	</footer>
 	<script src="https://cdn.jsdelivr.net/jquery.mixitup/2.1.11/jquery.mixitup.min.js"></script>
 	<script src="./js/main.js"></script>
-	
+
 </body>
 </html>
