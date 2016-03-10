@@ -39,6 +39,8 @@
         <div id="category" class="categories hidden">
             <div class="filter" data-filter=".apa">APA</div>
             <div class="filter" data-filter=".artifacts">Artifact Analysis</div>
+            <div class="filter" data-filter=".charts-tables">Charts and Tables</div>
+            <div class="filter" data-filter=".coding">Coding</div>
             <div class="filter" data-filter=".data-analysis">Data Analysis</div>
             <div class="filter" data-filter=".data-collection">Data Collection</div>
             <div class="filter" data-filter=".data-summary">Data Summary</div>
@@ -52,15 +54,15 @@
             <div class="filter" data-filter=".spss">SPSS</div>
             <div class="filter" data-filter=".stats">Statistics</div>
             <div class="filter" data-filter=".surveys">Surveys</div>
-        <div id="search">
-            <input type="text" placeholder="Start typing to search">
         </div>
+        <div id="search" class="hidden">
+            <input id="input" type="text" placeholder="Start typing to search">
         </div>
     </section>
     <section class="main">
     <div class="container">
         <div id="Container" class="flex-container">
-            <div class="mix guides posters" data-myorder="1">
+            <div class="mix guides posters" data-name="Poster Design Guide">
                 <h2>Poster Design Guide</h2>
                 <p>Instrutions, best practices, and how tos to create beautiful posters to present your research. </p>
                 <a href="./pages/posters.html">
@@ -68,8 +70,17 @@
                         <p><i class="fa fa-tags"></i> Posters</p>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>posters</p>
+                    <p>present</p>
+                    <p>powerpoint</p>
+                    <p>ppt</p>
+                    <p>407</p>
+                    <p>guides</p>
+                    <p>poster design guide</p>
+                </div>
             </div>
-            <div class="mix surveys data-collection technology" data-myorder="2">
+            <div class="mix surveys data-collection technology" data-name="Survey Monkey">
                 <img src="./img/survey-monkey.png" alt="survey monkey logo">
                 <h2>Survey Monkey</h2>
                 <a href="./pages/survey-monkey.html">
@@ -77,18 +88,36 @@
                         <p><i class="fa fa-tags"></i> Data Collection, Surveys</p>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>surveys</p>
+                    <p>monkey</p>
+                    <p>data collection</p>
+                    <p>collection</p>
+                    <p>407</p>
+                    <p>technology tools</p>
+                    <p>survey monkey</p>
+                </div>
             </div>
-            <div class="mix aids data-analysis" data-myorder="3">
+            <div class="mix aids data-analysis coding" data-name="Data Anlaysis - Text">
                 <img src="./img/sheet.png" alt="document icon">
-                <h2>Data Analysis Text</h2>
+                <h2>Data Analysis - Text</h2>
                 <a href="./assets/data-analysis-text.docx">
                     <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Data Analysis</p>
+                        <p><i class="fa fa-tags"></i> Data Analysis, Coding</p>
                         <i class="fa fa-download fa-3x action"></i>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>data analysis</p>
+                    <p>analysis</p>
+                    <p>interpretation</p>
+                    <p>coding</p>
+                    <p>408</p>
+                    <p>aid</p>
+                    <p>data analysis - text</p>
+                </div>
             </div>
-            <div class="mix aids apa" data-myorder="4">
+            <div class="mix aids apa" data-name="MP Outline">
                 <img src="./img/sheet.png" alt="document icon">
                 <h2>MP Outline</h2>
                 <a href="./assets/mp-outline_2015-2016.docx">
@@ -97,8 +126,19 @@
                         <i class="fa fa-download fa-3x action"></i>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>apa</p>
+                    <p>aids</p>
+                    <p>outline</p>
+                    <p>master's project</p>
+                    <p>organization</p>
+                    <p>mp outline</p>
+                    <p>organize</p>
+                    <p>organizing</p>
+                    <p>manage</p>
+                </div>
             </div>
-            <div class="mix templates apa" data-myorder="5">
+            <div class="mix templates apa" data-name="MP APA Template">
                 <img src="./img/sheet.png" alt="document icon">
                 <h2>MP APA Template</h2>
                 <a href="https://northwestern.box.com/shared/static/lgqwax92o5crl4xnenkn.docx">
@@ -107,8 +147,14 @@
                         <i class="fa fa-download fa-3x action"></i>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>templates</p>
+                    <p>apa</p>
+                    <p>master's project</p>
+                    <p>mp apa template</p>
+                </div>
             </div>
-            <div class="mix guides technology data-collection interviews" data-myorder="5">
+            <div class="mix guides technology data-collection interviews" data-name="Guide to Recording Interviews">
                 <h2>Guide to Recording Interviews</h2>
                 <p>Tips to capture the best audio quality during interviews and suggestions for programs to use to record your interviews.</p>
                 <a href="./pages/recording-interviews.html">
@@ -116,27 +162,65 @@
                         <p><i class="fa fa-tags"></i> Data Collection, Interviews</p>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>guides</p>
+                    <p>technology</p>
+                    <p>data collection</p>
+                    <p>collection</p>
+                    <p>interviews</p>
+                    <p>recording</p>
+                    <p>tools</p>
+                    <p>mobile</p>
+                    <p>guide to recording interviews</p>
+                </div>
             </div>
-            <div class="mix technology data-analysis stats spss nvivo" data-myorder="5">
+            <div class="mix technology data-analysis stats spss nvivo charts-tables" data-name="Virtual Desktop">
                 <img src="./img/remote-desktop-connection.png" alt="thin client icon">
                 <h2>Virtual Desktop</h2>
                 <a href="http://edtech.sesp.northwestern.edu/project/thin-client-virtual-machine/" target="_blank">
                     <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Data Analysis, Statistics, SPSS, NVivo</p>
+                        <p><i class="fa fa-tags"></i> Data Analysis, Statistics, SPSS, NVivo, Charts and Tables</p>
                         <i class="fa fa-external-link fa-3x action"></i>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>technology</p>
+                    <p>spss</p>
+                    <p>nvivo</p>
+                    <p>data analysis</p>
+                    <p>data summary</p>
+                    <p>data interpretation</p>
+                    <p>statistics</p>
+                    <p>tables</p>
+                    <p>charts</p>
+                    <p>graphs</p>
+                    <p>407</p>
+                    <p>408</p>
+                    <p>assessment</p>
+                    <p>virtual desktop</p>
+                </div>
             </div>
-            <div class="mix resources surveys artifacts" data-myorder="5">
+            <div class="mix resources surveys data-collection artifacts" data-name="Research Data">
                 <h2>Research Data</h2>
                 <p>List of sources of data for research projects.</p>
                 <a href="./pages/research-data.html">
                     <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Artifact Analysis, Surveys</p>
+                        <p><i class="fa fa-tags"></i> Artifact Analysis, Surveys, Data Collection</p>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>resources</p>
+                    <p>surveys</p>
+                    <p>artifacts</p>
+                    <p>artifact analysis</p>
+                    <p>data collection</p>
+                    <p>collection</p>
+                    <p>406</p>
+                    <p>407</p>
+                    <p>research data</p>
+                </div>
             </div>
-            <div class="mix aids templates irb data-collection" data-myorder="5">
+            <div class="mix aids templates irb data-collection" data-name="IRB Protocol">
                 <img src="./img/sheet.png" alt="document icon">
                 <h2>IRB Protocol</h2>
                 <a href="../assets/IRB_ProtocolF-Updated_15.docx">
@@ -145,17 +229,43 @@
                         <i class="fa fa-download fa-3x action"></i>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>aids</p>
+                    <p>templates</p>
+                    <p>data collection</p>
+                    <p>collection</p>
+                    <p>407</p>
+                    <p>irb</p>
+                    <p>irb protocol</p>
+                    <p>protocol</p>
+                    <p>ethics</p>
+                    <p>consent</p>
+                    <p>confidentiality</p>
+                </div>
             </div>
-            <div class="mix technology spss stats adobe presentations infographics posters" data-myorder="5">
+            <div class="mix technology spss stats presentations infographics posters" data-name="Lynda.com">
                 <img src="./img/lynda.com-logo.png" alt="lynda.com logo">
                 <h2>Lynda.com</h2>
                 <a href="./pages/lynda.html">
                     <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> SPSS, Statistics, Adobe CC, Infographics, Posters, Presentations</p>
+                        <p><i class="fa fa-tags"></i> SPSS, Statistics, Infographics, Posters, Presentations</p>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>technology</p>
+                    <p>spss</p>
+                    <p>statistics</p>
+                    <p>infographics</p>
+                    <p>data analysis</p>
+                    <p>data summary</p>
+                    <p>data interpretation</p>
+                    <p>407</p>
+                    <p>406</p>
+                    <p>408</p>
+                    <p>lynda.com</p>
+                </div>
             </div>
-            <div class="mix technology apa" data-myorder="5">
+            <div class="mix technology apa" data-name="Endnote">
                 <img src="./img/en-logo.png" alt="endnote logo">
                 <h2>EndNote</h2>
                 <a href="http://www.it.northwestern.edu/software/endnote-fac/" target="_blank">
@@ -164,8 +274,20 @@
                         <i class="fa fa-external-link fa-3x action"></i>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>endnote</p>
+                    <p>technology</p>
+                    <p>library</p>
+                    <p>references</p>
+                    <p>apa</p>
+                    <p>organizing</p>
+                    <p>organization</p>
+                    <p>citations</p>
+                    <p>cite</p>
+                    <p>manage</p>
+                </div>
             </div>
-            <div class="mix technology apa" data-myorder="5">
+            <div class="mix technology apa" data-name="Zotero">
                 <img src="./img/zotero.png" alt="zotero logo">
                 <h2>Zotero</h2>
                 <a href="http://libguides.northwestern.edu/zotero" target="_blank">
@@ -174,37 +296,84 @@
                         <i class="fa fa-external-link fa-3x action"></i>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>technology</p>
+                    <p>library</p>
+                    <p>references</p>
+                    <p>apa</p>
+                    <p>zotero</p>
+                    <p>organizing</p>
+                    <p>organization</p>
+                    <p>citations</p>
+                    <p>cite</p>
+                    <p>manage</p>
+                </div>
             </div>
-            <div class="mix guides technology data-analysis interviews" data-myorder="5">
+            <div class="mix guides technology data-analysis data-summary interviews" data-name="Guide to Transcribing Interviews">
                 <h2>Guide to transcribing Interviews</h2>
                 <p>Tips and free technology tools to help take some of the pain out of transcribing audio and video.</p>
                 <a href="./pages/transcribing-interviews.html">
                     <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Data Anlaysis, Interviews</p>
+                        <p><i class="fa fa-tags"></i> Data Anlaysis, Interviews, Data Summary</p>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>guides</p>
+                    <p>technology</p>
+                    <p>transcribing</p>
+                    <p>interviews</p>
+                    <p>transcription</p>
+                    <p>transcribe</p>
+                    <p>data analysis</p>
+                    <p>data interpretation</p>
+                    <p>data summary</p>
+                    <p>guide to transcribing interviews</p>
+                </div>
             </div>
-            <div class="mix aids stats data-analysis data-summary" data-myorder="5">
+            <div class="mix aids stats data-analysis data-summary charts-tables" data-name="Excel for Research">
                 <img src="./img/sheet.png" alt="document icon">
                 <h2>Excel for Research</h2>
                 <a href="../assets/Excel_Research_One-Pager.pdf" target="_blank">
                     <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Statistics, Data Anlaysis, Data Summary</p>
+                        <p><i class="fa fa-tags"></i> Statistics, Data Anlaysis, Data Summary, Charts and Tables</p>
                         <i class="fa fa-download fa-3x action"></i>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>excel</p>
+                    <p>statistics</p>
+                    <p>pivot</p>
+                    <p>pivot charts</p>
+                    <p>pivot tables</p>
+                    <p>charts</p>
+                    <p>tables</p>
+                    <p>graphs</p>
+                    <p>data analysis</p>
+                    <p>data summary</p>
+                    <p>excel for research</p>
+                    <p>aids</p>
+                </div>
             </div>
-            <div class="mix technology infographics posters presentations" data-myorder="5">
+            <div class="mix technology infographics presentations" data-name="Picktochart">
                 <img src="./img/pickto-logo.png" alt="picktochart logo">
                 <h2>Picktochart</h2>
                 <a href="http://piktochart.com/" target="_blank">
                     <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Infographics, Posters, Presentations</p>
+                        <p><i class="fa fa-tags"></i> Infographics, Presentations</p>
                         <i class="fa fa-external-link fa-3x action"></i>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>infographics</p>
+                    <p>technology</p>
+                    <p>presentations</p>
+                    <p>picktochart</p>
+                    <p>graphic</p>
+                    <p>408</p>
+                    <p>407</p>
+                </div>
             </div>
-            <div class="mix technology posters" data-myorder="5">
+            <div class="mix technology posters" data-name="Canva">
                 <img src="./img/Canva_Logo.png" alt="canva logo">
                 <h2>Canva</h2>
                 <a href="https://www.canva.com/create/posters/" target="_blank">
@@ -213,8 +382,16 @@
                         <i class="fa fa-external-link fa-3x action"></i>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>posters</p>
+                    <p>technology</p>
+                    <p>design</p>
+                    <p>graphic</p>
+                    <p>407</p>
+                    <p>canva.com</p>
+                </div>
             </div>
-            <div class="mix guides resources lit-review" data-myorder="5">
+            <div class="mix guides resources lit-review" data-name="NU Library Education Guide">
                 <h2>NU Library Education Guide</h2>
                 <p>Browse the Northwestern Library resources related to Education</p>
                 <a href="http://libguides.northwestern.edu/education?hs=a" target="_blank">
@@ -223,8 +400,19 @@
                         <i class="fa fa-external-link fa-3x action"></i>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>guides</p>
+                    <p>technology</p>
+                    <p>library</p>
+                    <p>resources</p>
+                    <p>refernces</p>
+                    <p>nu library education guide</p>
+                    <p>literature review</p>
+                    <p>lit review</p>
+                    <p>406</p>
+                </div>
             </div>
-            <div class="mix aids lit-review" data-myorder="5">
+            <div class="mix aids lit-review" data-name="SESP Librarian">
                 <img src="./img/people.png" alt="people icon">
                 <h2>SESP Librarian</h2>
                 <a href="./pages/librarian.html">
@@ -232,8 +420,18 @@
                         <p><i class="fa fa-tags"></i> Literature Review</p>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>aids</p>
+                    <p>literature review</p>
+                    <p>lit review</p>
+                    <p>library</p>
+                    <p>references</p>
+                    <p>librarian</p>
+                    <p>li</p>
+                    <p>sesp librarian</p>
+                </div>
             </div>
-            <div class="mix resources lit-review" data-myorder="5">
+            <div class="mix resources lit-review" data-name="Tips on Conducting a Lit Review">
                 <h2>Tips on Conducting a Lit Review</h2>
                 <p>A great resource from the University of Toronto that explains what a literature review is and tips on how to write a good one.</p>
                 <a href="http://www.writing.utoronto.ca/advice/specific-types-of-writing/literature-review" target="_blank">
@@ -242,8 +440,17 @@
                         <i class="fa fa-external-link fa-3x action"></i>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>literature review</p>
+                    <p>lit review</p>
+                    <p>resources</p>
+                    <p>tips on conducting a lit review</p>
+                    <p>references</p>
+                    <p>406</p>
+                    <p>toronto</p>
+                </div>
             </div>
-            <div class="mix aids data-summary" data-myorder="5">
+            <div class="mix aids data-summary" data-name="Data Summary Worksheet">
                 <img src="./img/sheet.png" alt="document icon">
                 <h2>Data Summary Worksheet</h2>
                 <a href="../assets/Preliminary-Data-Summary-Worksheet.docx">
@@ -252,7 +459,72 @@
                         <i class="fa fa-download fa-3x action"></i>
                     </div>
                 </a>
+                <div class="meta hidden">
+                    <p>aids</p>
+                    <p>data summary</p>
+                    <p>worksheet</p>
+                    <p>408</p>
+                    <p>data summary worksheet</p>
+                </div>
             </div>
+            <div class="mix aids data-summary" data-name="Question to help with Data Summary">
+                <img src="./img/sheet.png" alt="document icon">
+                <h2>Question to help with Data Summary</h2>
+                <a href="../assets/Questions_Help-Data-Summary.docx">
+                    <div class="mix-hover hidden">
+                        <p><i class="fa fa-tags"></i> Data Summary</p>
+                        <i class="fa fa-download fa-3x action"></i>
+                    </div>
+                </a>
+                <div class="meta hidden">
+                    <p>aids</p>
+                    <p>data summary</p>
+                    <p>questions to help with data summary</p>
+                    <p>408</p>
+                    <p>summary</p>
+                </div>
+            </div>
+            <div class="mix aids data-analysis" data-name="Weaving it all together">
+                <img src="./img/sheet.png" alt="document icon">
+                <h2>Weaving it all together</h2>
+                <a href="../assets/weaving-it-all-together.docx">
+                    <div class="mix-hover hidden">
+                        <p><i class="fa fa-tags"></i> Data Analysis</p>
+                        <i class="fa fa-download fa-3x action"></i>
+                    </div>
+                </a>
+                <div class="meta hidden">
+                    <p>aids</p>
+                    <p>data analysis</p>
+                    <p>weaving it all together</p>
+                    <p>408</p>
+                    <p>analysis</p>
+                    <p>conclusions</p>
+                    <p>data interpretation</p>
+                </div>
+            </div>
+            <div class="mix aids data-analysis data-summary" data-name="Summarizing Literature and Data">
+                <img src="./img/sheet.png" alt="document icon">
+                <h2>Summarizing Literature and Data</h2>
+                <a href="../assets/summarizing-literature-data.docx">
+                    <div class="mix-hover hidden">
+                        <p><i class="fa fa-tags"></i> Data Analysis, Data Summary</p>
+                        <i class="fa fa-download fa-3x action"></i>
+                    </div>
+                </a>
+                <div class="meta hidden">
+                    <p>aids</p>
+                    <p>data analysis</p>
+                    <p>summarizing literature and data</p>
+                    <p>literature</p>
+                    <p>408</p>
+                    <p>analysis</p>
+                    <p>conclusions</p>
+                    <p>data interpretation</p>
+                    <p>data summary</p>
+                </div>
+            </div>
+            
         </div>
     </div>
 	</section>

@@ -50,7 +50,11 @@ $(document).ready(function(){
 	});
 	// Instantiate MixItUp:
 
-	$('#Container').mixItUp();
+	$('#Container').mixItUp({
+		load: {
+			sort: 'name:asc'
+		}
+	});
 
 
 $(function() {
@@ -80,7 +84,7 @@ $(function() {
           $this = $("this");
           
           // add item to be filtered out if input text matches items inside the title   
-          if($(this).children('.mix').text().toLowerCase().match(inputText)) {
+          if($(this).children('.meta').text().toLowerCase().match(inputText)) {
             $matching = $matching.add(this);
           }
           else {

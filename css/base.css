@@ -89,7 +89,7 @@ strong {
 }
 
 input {
-    height: 20px;
+    height: 25px;
     margin: 5px;
     border: 1px solid #999;
     border-radius: 2px;
@@ -186,6 +186,7 @@ header i:hover {
     display: inline-block;
     padding-bottom: 6px;
     margin: 0;
+    line-height: 1;
 }
 
 .title ul {
@@ -197,6 +198,7 @@ header i:hover {
     margin: 7px 5px 0px 5px;
     font-size: smaller;
     color: #999;
+    line-height: 1;
 }
 
 .title li:first-child {
@@ -248,7 +250,7 @@ header i:hover {
 .mix h2 {
     margin: 10px 0px 10px 0px;
     font-size: 0.75em;
-    line-height: 1;
+    line-height: 1.1;
     vertical-align: bottom;
 }
 
