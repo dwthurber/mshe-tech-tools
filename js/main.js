@@ -2,32 +2,32 @@ $(document).ready(function(){
 	$("#type-button").click(function(){
 		if ($("#category").is(':visible')) {
 			$("#category-chevron").toggleClass('rotate');
+			$("#category").slideToggle();
 		} else {
 			
 		}
 		if ($("#search").is(':visible')) {
 			$("#search-chevron").toggleClass('rotate');
+			$("#search").slideToggle();
 		} else {
 			
 		}
-		$("#category").hide();
-		$("#search").hide();
 		$("#type").slideToggle();
 		$("#type-chevron").toggleClass('rotate');
 	});
 	$("#category-button").click(function(){
 		if ($("#type").is(':visible')) {
 			$("#type-chevron").toggleClass('rotate');
+			$("#type").slideToggle();
 		} else {
 			
 		}
 		if ($("#search").is(':visible')) {
 			$("#search-chevron").toggleClass('rotate');
+			$("#search").slideToggle();
 		} else {
 			
 		}
-		$("#type").hide();
-		$("#search").hide();
 		$("#category").slideToggle();
 		$("#category-chevron").toggleClass('rotate');
 		
@@ -35,16 +35,16 @@ $(document).ready(function(){
 	$("#search-button").click(function(){
 		if ($("#type").is(':visible')) {
 			$("#type-chevron").toggleClass('rotate');
+			$("#type").slideToggle();
 		} else {
 			
 		}
 		if ($("#category").is(':visible')) {
 			$("#category-chevron").toggleClass('rotate');
+			$("#category").slideToggle();
 		} else {
 			
 		}
-		$("#category").hide();
-		$("#type").hide();
 		$("#search").slideToggle();
 		$("#search-chevron").toggleClass('rotate');
 	});
