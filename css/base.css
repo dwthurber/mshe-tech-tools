@@ -246,10 +246,11 @@ header i:hover {
     border: 1px solid #ccc;
     padding: 10px;
     position: relative;
+    overflow: hidden;
 }
 
 .mix h2 {
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 5px 0px;
     font-size: 0.75em;
     line-height: 1.1;
     vertical-align: bottom;
@@ -262,7 +263,7 @@ header i:hover {
 }
 
 .mix img {
-    height: 120px;
+    height: 100px;
     display: block;
     text-align: center;
     margin: 0 auto;
