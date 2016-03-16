@@ -90,7 +90,7 @@ strong {
 
 input {
     height: 20px;
-    margin: 10px 5px 0 5px;
+    margin-top: 5px;
     border: 1px solid #999;
     border-radius: 2px;
     width: 400px;
@@ -189,10 +189,19 @@ header i:hover {
     padding-left: 10px;
 }
 
+.title p {
+    font-size: smaller;
+    margin: 5px 0 2px 0;
+}
+
+.title a {
+    color: #4e2a84;
+}
+
 .title h1 {
     border-bottom: 1px solid #aaa;
     display: inline-block;
-    padding-bottom: 1px;
+    padding-bottom: 5px;
     margin: 0;
     line-height: 1;
 }

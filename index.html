@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>MSHE Tehnology Tools and Resources</title>
+    <title>MSHE Research Tools, Examples, and Resources</title>
     <meta name="author" content="Derek Thurber">
     <meta name="description" content="A Page on Technology Tools and Resources for the Master of Science in Higher Education Administration and Policy program in the School of Education and Social Policy at Northwestern University">
     
@@ -16,14 +16,16 @@
     <section class="hero">
     <div class="container wide">
         <div class="title">
-            <h1>Research Tools and Resources</h1><br>
-            <input id="input" type="text" placeholder="Start typing to search">
-            <!--<ul>-->
-            <!--    <li id="show-all" class="filter" data-filter="all">Show All</li>-->
+            <h1>Research Tools, Examples, and Resources</h1><br>
+            
+            <ul>
+                <!--<li id="show-all" class="filter" data-filter="all">Show All</li>-->
                 <!--<li id="type-button">Type <i id="type-chevron" class="fa fa-chevron-down"></i></li>-->
-            <!--    <li id="category-button">Category <i id="category-chevron" class="fa fa-chevron-down"></i></li>-->
-            <!--    <li id="search-button">Search <i id="search-chevron" class="fa fa-chevron-down"></i></li>-->
-            <!--</ul>-->
+                <!--<li id="category-button">Category <i id="category-chevron" class="fa fa-chevron-down"></i></li>-->
+                <!--<li id="search-button">Search <i id="search-chevron" class="fa fa-chevron-down"></i></li>-->
+            </ul>
+            <p><a href="#aids" class="smoothScroll">Aids and Guides</a> | <a href="#examples" class="smoothScroll">Examples</a> | <a href="#resources" class="smoothScroll">Library, Data, and Other Resources</a> | <a href="#technology" class="smoothScroll">Technology Tools</a> | <a href="#templates" class="smoothScroll">Templates</a></p>
+            <input id="input" type="text" placeholder="Start typing to search">
         </div>
     </div>
     </section>
@@ -64,7 +66,7 @@
     <section class="main">
     <div class="container">
         <div class="flex-container group">
-            <h3 class="flex-header">Aids and Guides</h3>
+            <h3 class="flex-header" id="aids">Aids and Guides</h3>
             <div class="mix aids posters" data-name="Poster Design Guide">
                 <h2>Poster Design Guide</h2>
                 <p>Instrutions, best practices, and how tos to create beautiful posters to present your research. </p>
@@ -331,7 +333,7 @@
         </div>
         
         <div class="flex-container group">
-            <h3 class="flex-header">Examples</h3>
+            <h3 class="flex-header" id="examples">Examples</h3>
             <div class="mix examples questions" data-name="Example Research Questions">
                 <!--<img src="./img/sheet.png" alt="document icon">-->
                 <h2>Example Research Questions</h2>
@@ -397,7 +399,7 @@
         </div>
         
         <div class="flex-container group">
-            <h3 class="flex-header">Library, Data, and Other Resources</h3>
+            <h3 class="flex-header" id="resources">Library, Data, and Other Resources</h3>
             <div class="mix resources surveys data-collection artifacts" data-name="Research Data">
                 <h2>Research Data</h2>
                 <p>List of sources of data for research projects.</p>
@@ -462,7 +464,7 @@
         </div>
         
         <div class="flex-container group">
-            <h3 class="flex-header">Technology Tools</h3>
+            <h3 class="flex-header" id="technology">Technology Tools</h3>
             <div class="mix surveys data-collection technology" data-name="Survey Monkey">
                 <img src="./img/survey-monkey.png" alt="survey monkey logo">
                 <h2>Survey Monkey</h2>
@@ -645,7 +647,7 @@
         </div>
         
         <div class="flex-container group">
-            <h3 class="flex-header">Templates</h3>
+            <h3 class="flex-header" id="templates">Templates</h3>
             <div class="mix templates" data-name="MP APA Template">
                 <img src="./img/sheet.png" alt="document icon">
                 <h2>MP APA Template</h2>
@@ -695,6 +697,7 @@
 	</footer>
 	<script src="https://cdn.jsdelivr.net/jquery.mixitup/2.1.11/jquery.mixitup.min.js"></script>
 	<script src="./js/main.js"></script>
+	<script src="./js/smoothscroll.js"></script>
 
 </body>
 </html>
