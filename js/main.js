@@ -50,7 +50,7 @@ $(document).ready(function(){
 	});
 	// Instantiate MixItUp:
 
-	$('#Container').mixItUp({
+	$('.group').mixItUp({
 		load: {
 			sort: 'name:asc'
 		}
@@ -59,7 +59,7 @@ $(document).ready(function(){
 
 $(function() {
 
-  $("#Container").mixItUp();
+  $(".group").mixItUp();
 
   var inputText;
   var $matching = $();
@@ -92,12 +92,12 @@ $(function() {
             $matching = $matching.not(this);
           }
         });
-        $("#Container").mixItUp('filter', $matching);
+        $(".group").mixItUp('filter', $matching);
       }
 
       else {
         // resets the filter to show all item if input is empty
-        $("#Container").mixItUp('filter', 'all');
+        $(".group").mixItUp('filter', 'all');
       }
     }, 200 );
   });
