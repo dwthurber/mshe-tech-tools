@@ -238,6 +238,21 @@ header i:hover {
     font-weight: 200;
 }
 
+.scrolltop {
+    position: fixed;
+    right: 25px;
+    bottom: 15px;
+    
+}
+
+.scrolltop i {
+    color: rgba(120,120,120,0.2);
+}
+
+.scrolltop i:hover {
+    color: rgba(120,120,120,1);
+}
+
 .flex-header {
     display: block;
     width: 100%;
