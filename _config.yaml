@@ -1,0 +1,30 @@
+types:
+  - download
+  - external link
+  - internal pages
+
+filters:
+  - 406
+  - 407
+  - 408
+  - research questions
+  - abstract
+  - introduction
+  - literature review
+  - data collection
+  - data summary
+  - data interpretation
+  - conclusion
+  - executive summary
+  - irb
+  - posters
+  - presentations
+  - charts and tables
+  - coding
+  - focus groups
+  - interviews
+  - observations
+  - references
+  - statistics
+  - surveys
+  
