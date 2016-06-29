@@ -222,7 +222,7 @@ technology tools:
                 {% if item.icon_path != null %}<img src=".{{ item.icon_path }}" alt="resource type icon">{% endif %}
                 <h2>{{ item.title }}</h2>
                 <p>{{ item.subtitle }}</p>
-                {% if item.type == 'external link' %}<a href="{{ item.link_path }}" target="_blank">{% elsif %}<a href="{{ item.link_path }}">{% endif %}
+                {% if item.type == 'external link' %}<a href="{{ item.link_path }}" target="_blank">{% else %}<a href="{{ item.link_path }}">{% endif %}
                     <div class="mix-hover hidden">
                         <p><i class="fa fa-tags"></i> {{ item.filters | join:', ' }}</p>
                         {% if item.type == 'external link' %}<i class="fa fa-external-link fa-3x action"></i>{% endif %}
