@@ -194,7 +194,7 @@ technology tools:
             <h3 class="flex-header" id="aids">Aids and Resources</h3>
             {% for item in page.aids %}
             <div class="mix {{ item.filters | join: ',' | remove: ' ' | split: ',' | join: ' ' }}" data-name="{{ item.title }}">
-                <img src=".{{ item.icon_path }}" alt="resource type icon">
+                {% if item.icon_path != null %}<img src=".{{ item.icon_path }}" alt="resource type icon">{% endif %}
                 <h2>{{ item.title }}</h2>
                 <p>{{ item.subtitle }}</p>
                 <a href="{{ item.link_path }}">
