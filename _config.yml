@@ -4,9 +4,9 @@ types:
   - internal pages
 
 filters:
-  - 406
-  - 407
-  - 408
+  - '406'
+  - '407'
+  - '408'
   - research questions
   - abstract
   - introduction
