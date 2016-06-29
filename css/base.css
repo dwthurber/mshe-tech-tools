@@ -350,6 +350,14 @@ header i:hover {
     color: #fff;
 }
 
+.categories {
+    margin-bottom: 10px;
+}
+
+.categories:last-child {
+    margin-bottom: 0;
+}
+
 .categories > .filter {
     display: inline-block;
     margin: 5px 5px;
@@ -363,3 +371,41 @@ header i:hover {
     cursor: pointer;
     box-shadow: 0px 0px 6px 0px #fff;
 }
+
+.class-filter {
+    background-color: #B6ACD1!important;
+}
+
+.mp-filter {
+    background-color: #8AACB8!important;
+}
+
+.type-filter {
+    background-color: #B8968A!important;
+}
+
+/*.filter-group {*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    margin: 0 10px;*/
+/*}*/
+
+/*.filter-group p {*/
+/*    display: inline-block;*/
+/*    color: #fff;*/
+/*}*/
+
+/*.filter-dropdown {*/
+/*    position: absolute;*/
+/*    background-color: #fff;*/
+/*    width: 200px;*/
+/*    min-height: 100px;*/
+/*    box-shadow: 1px 1px 1px 1px #eee;*/
+/*    z-index: 1000;*/
+/*    left: 0;*/
+/*}*/
+
+/*.show-details:hover {*/
+/*    cursor: pointer;*/
+/*    color: #eee;*/
+/*}*/
