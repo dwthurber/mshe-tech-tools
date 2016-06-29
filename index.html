@@ -90,7 +90,7 @@ aids:
       - data interpretation
       - conclusion
     type: download
-external resources:
+resources:
   - title: NU Library Education Guide
     subtitle: Browse the Northwestern Library resources related to Education
     icon_path:
@@ -238,68 +238,23 @@ technology tools:
         
         <div class="flex-container group">
             <h3 class="flex-header" id="resources">External Resources</h3>
-            <div class="mix resources surveys data-collection artifacts 406 407" data-name="Research Data">
-                <img src=".{{ item.icon_path }}" alt="document icon">
-                <h2>Research Data</h2>
-                <p>List of sources of data for research projects.</p>
-                <a href="./pages/research-data.html">
+            {% for item in page.resources %}
+            <div class="mix {{ item.filters | join: ',' | remove: ' ' | split: ',' | join: ' ' }}" data-name="{{ item.title }}">
+                {% if item.icon_path != null %}<img src=".{{ item.icon_path }}" alt="resource type icon">{% endif %}
+                <h2>{{ item.title }}</h2>
+                <p>{{ item.subtitle }}</p>
+                <a href="{{ item.link_path }}">
                     <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Artifact Analysis, Surveys, Data Collection</p>
+                        <p><i class="fa fa-tags"></i> {{ item.filters | join:', ' }}</p>
+                        {% if item.type == 'external link' %}<i class="fa fa-external-link fa-3x action"></i>{% endif %}
+                        {% if item.type == 'download' %}<i class="fa fa-download fa-3x action"></i>{% endif %}
                     </div>
                 </a>
                 <div class="meta hidden">
-                    <p>resources</p>
-                    <p>surveys</p>
-                    <p>artifacts</p>
-                    <p>artifact analysis</p>
-                    <p>data collection</p>
-                    <p>collection</p>
-                    <p>406</p>
-                    <p>407</p>
-                    <p>research data</p>
+                    <p>{{ item.filters }}</p>
                 </div>
             </div>
-            <div class="mix resources lit-review 406 407" data-name="NU Library Education Guide">
-                <h2>NU Library Education Guide</h2>
-                <p>Browse the Northwestern Library resources related to Education</p>
-                <a href="http://libguides.northwestern.edu/education?hs=a" target="_blank">
-                    <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Literature Review</p>
-                        <i class="fa fa-external-link fa-3x action"></i>
-                    </div>
-                </a>
-                <div class="meta hidden">
-                    <p>resources</p>
-                    <p>technology</p>
-                    <p>library</p>
-                    <p>resources</p>
-                    <p>refernces</p>
-                    <p>nu library education guide</p>
-                    <p>literature review</p>
-                    <p>lit review</p>
-                    <p>406</p>
-                </div>
-            </div>
-            <div class="mix resources lit-review 406 407" data-name="SESP Librarian">
-                <img src="./img/people.png" alt="people icon">
-                <h2>SESP Librarian</h2>
-                <p>School of Education Librarian: Qunying Li</p>
-                <a href="./pages/librarian.html">
-                    <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Literature Review</p>
-                    </div>
-                </a>
-                <div class="meta hidden">
-                    <p>resources</p>
-                    <p>literature review</p>
-                    <p>lit review</p>
-                    <p>library</p>
-                    <p>references</p>
-                    <p>librarian</p>
-                    <p>li</p>
-                    <p>sesp librarian</p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
         
         <div class="flex-container group">
