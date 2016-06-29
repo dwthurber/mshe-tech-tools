@@ -193,7 +193,7 @@ technology tools:
         <div class="flex-container group">
             <h3 class="flex-header" id="aids">Aids and Resources</h3>
             {% for item in page.aids %}
-            <div class="{{ item.filters | join: ',' | remove: ' ' | split: ',' | join: ' ' }}" data-name="{{ item.title }}">
+            <div class="mix {{ item.filters | join: ',' | remove: ' ' | split: ',' | join: ' ' }}" data-name="{{ item.title }}">
                 <h2>{{ item.title }}</h2>
                 <p>I{{ item.subtitle }}</p>
                 <a href="{{ item.link_path }}">
