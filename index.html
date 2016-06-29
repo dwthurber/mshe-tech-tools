@@ -201,6 +201,7 @@ technology tools:
                     <div class="mix-hover hidden">
                         <p><i class="fa fa-tags"></i> {{ item.filters | join:', ' }}</p>
                         {% if item.type == 'external link' %}<i class="fa fa-external-link fa-3x action"></i>{% endif %}
+                        {% if item.type == 'download' %}<i class="fa fa-download fa-3x action"></i>{% endif %}
                     </div>
                 </a>
                 <div class="meta hidden">
