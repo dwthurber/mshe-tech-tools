@@ -195,7 +195,7 @@ technology tools:
             {% for item in page.aids %}
             <div class="mix {{ item.filters | join: ',' | remove: ' ' | split: ',' | join: ' ' }}" data-name="{{ item.title }}">
                 <h2>{{ item.title }}</h2>
-                <p>I{{ item.subtitle }}</p>
+                <p>{{ item.subtitle }}</p>
                 <a href="{{ item.link_path }}">
                     <div class="mix-hover hidden">
                         <p><i class="fa fa-tags"></i> {{ item.filters | join:', ' }}</p>
@@ -211,6 +211,7 @@ technology tools:
         <div class="flex-container group">
             <h3 class="flex-header" id="resources">External Resources</h3>
             <div class="mix resources surveys data-collection artifacts 406 407" data-name="Research Data">
+                {% if item.icon_path != null %}<img src=".{{ item.icon_path }}" alt="document icon">{% endif %}
                 <h2>Research Data</h2>
                 <p>List of sources of data for research projects.</p>
                 <a href="./pages/research-data.html">
