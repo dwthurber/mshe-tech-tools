@@ -129,7 +129,7 @@ rubrics:
     link_path:
     filters:
     type: download
-technology tools:
+tools:
   - title: Canva
     subtitle: Drag-and-drop poster/presentation maker
     icon_path: /img/canva_logo.png
@@ -399,253 +399,23 @@ technology tools:
         
         <div class="flex-container group">
             <h3 class="flex-header" id="technology">Technology Tools</h3>
-            <div class="mix surveys data-collection technology 407 408" data-name="Survey Monkey">
-                <img src="./img/survey-monkey.png" alt="survey monkey logo">
-                <h2>Survey Monkey</h2>
-                <p>Free access through SESP account.</p>
-                <a href="./pages/survey-monkey.html">
+            {% for item in page.tools %}
+            <div class="mix {{ item.filters | join: ',' | remove: ' ' | split: ',' | join: ' ' }}" data-name="{{ item.title }}">
+                {% if item.icon_path != null %}<img src=".{{ item.icon_path }}" alt="resource type icon">{% endif %}
+                <h2>{{ item.title }}</h2>
+                <p>{{ item.subtitle }}</p>
+                {% if item.type == 'external link' %}<a href="{{ item.link_path }}" target="_blank">{% else %}<a href="{{ item.link_path }}">{% endif %}
                     <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Data Collection, Surveys</p>
+                        <p><i class="fa fa-tags"></i> {{ item.filters | join:', ' }}</p>
+                        {% if item.type == 'external link' %}<i class="fa fa-external-link fa-3x action"></i>{% endif %}
+                        {% if item.type == 'download' %}<i class="fa fa-download fa-3x action"></i>{% endif %}
                     </div>
                 </a>
                 <div class="meta hidden">
-                    <p>surveys</p>
-                    <p>monkey</p>
-                    <p>data collection</p>
-                    <p>collection</p>
-                    <p>407</p>
-                    <p>technology tools</p>
-                    <p>survey monkey</p>
+                    <p>{{ item.filters }}</p>
                 </div>
             </div>
-            <div class="mix technology data-summary coding data-analysis stats spss charts-tables 407 408" data-name="spss">
-                <img src="./img/spss-logo.jpg" alt="spss icon">
-                <h2>SPSS</h2>
-                <p>Free acess provided through virtual desktop.</p>
-                <a href="http://edtech.sesp.northwestern.edu/project/thin-client-virtual-machine/" target="_blank">
-                    <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Data Interpretation, Statistics, SPSS, Coding, Charts and Tables</p>
-                        <i class="fa fa-external-link fa-3x action"></i>
-                    </div>
-                </a>
-                <div class="meta hidden">
-                    <p>technology</p>
-                    <p>spss</p>
-                    <p>data analysis</p>
-                    <p>data summary</p>
-                    <p>data interpretation</p>
-                    <p>statistics</p>
-                    <p>tables</p>
-                    <p>charts</p>
-                    <p>graphs</p>
-                    <p>407</p>
-                    <p>408</p>
-                    <p>assessment</p>
-                    <p>virtual desktop</p>
-                </div>
-            </div>
-            <div class="mix technology data-analysis coding nvivo 407 408" data-name="nvivo">
-                <img src="./img/NVivo-logo.png" alt="nvivo icon">
-                <h2>Nvivo</h2>
-                <p>Free acess provided through virtual desktop.</p>
-                <a href="http://edtech.sesp.northwestern.edu/project/thin-client-virtual-machine/" target="_blank">
-                    <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Data Interpretation, Nvivo, Coding</p>
-                        <i class="fa fa-external-link fa-3x action"></i>
-                    </div>
-                </a>
-                <div class="meta hidden">
-                    <p>technology</p>
-                    <p>NVivo</p>
-                    <p>data analysis</p>
-                    <p>data summary</p>
-                    <p>data interpretation</p>
-                    <p>coding</p>
-                    <p>407</p>
-                    <p>408</p>
-                    <p>assessment</p>
-                    <p>virtual desktop</p>
-                </div>
-            </div>
-            <div class="mix technology spss stats presentations graphics posters" data-name="Lynda.com">
-                <img src="./img/lynda.com-logo.png" alt="lynda.com logo">
-                <h2>Lynda.com</h2>
-                <p>Online learning videos for technology and graphics.</p>
-                <a href="./pages/lynda.html">
-                    <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> SPSS, Statistics, Infographics, Posters, Presentations</p>
-                    </div>
-                </a>
-                <div class="meta hidden">
-                    <p>technology</p>
-                    <p>spss</p>
-                    <p>statistics</p>
-                    <p>infographics</p>
-                    <p>data analysis</p>
-                    <p>data summary</p>
-                    <p>data interpretation</p>
-                    <p>407</p>
-                    <p>406</p>
-                    <p>408</p>
-                    <p>lynda.com</p>
-                </div>
-            </div>
-            <div class="mix technology references lit-review 406 407 408" data-name="Endnote">
-                <img src="./img/en-logo.png" alt="endnote logo">
-                <h2>EndNote</h2>
-                <p>Manage references and generate citations.</p>
-                <a href="http://www.it.northwestern.edu/software/endnote-fac/" target="_blank">
-                    <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> APA</p>
-                        <i class="fa fa-external-link fa-3x action"></i>
-                    </div>
-                </a>
-                <div class="meta hidden">
-                    <p>endnote</p>
-                    <p>technology</p>
-                    <p>library</p>
-                    <p>references</p>
-                    <p>apa</p>
-                    <p>organizing</p>
-                    <p>organization</p>
-                    <p>citations</p>
-                    <p>cite</p>
-                    <p>manage</p>
-                    <p>literature review</p>
-                </div>
-            </div>
-            <div class="mix technology references lit-review 406 407 408" data-name="Zotero">
-                <img src="./img/zotero.png" alt="zotero logo">
-                <h2>Zotero</h2>
-                <p>Manage references and generate citations.</p>
-                <a href="http://libguides.northwestern.edu/zotero" target="_blank">
-                    <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> APA</p>
-                        <i class="fa fa-external-link fa-3x action"></i>
-                    </div>
-                </a>
-                <div class="meta hidden">
-                    <p>technology</p>
-                    <p>library</p>
-                    <p>references</p>
-                    <p>apa</p>
-                    <p>zotero</p>
-                    <p>organizing</p>
-                    <p>organization</p>
-                    <p>citations</p>
-                    <p>cite</p>
-                    <p>manage</p>
-                    <p>literature review</p>
-                </div>
-            </div>
-            <div class="mix technology charts-tables graphics presentations 407 408" data-name="Picktochart">
-                <img src="./img/pickto-logo.png" alt="picktochart logo">
-                <h2>Picktochart</h2>
-                <p>All you will need to make information beautiful.</p>
-                <a href="http://piktochart.com/" target="_blank">
-                    <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Infographics, Presentations</p>
-                        <i class="fa fa-external-link fa-3x action"></i>
-                    </div>
-                </a>
-                <div class="meta hidden">
-                    <p>infographics</p>
-                    <p>technology</p>
-                    <p>presentations</p>
-                    <p>picktochart</p>
-                    <p>charts</p>
-                    <p>tables</p>
-                    <p>graphs</p>
-                    <p>graphic</p>
-                    <p>408</p>
-                    <p>407</p>
-                </div>
-            </div>
-            <div class="mix technology posters 407 408" data-name="Canva">
-                <img src="./img/Canva_Logo.png" alt="canva logo">
-                <h2>Canva</h2>
-                <p>Drag-and-drop poster maker.</p>
-                <a href="https://www.canva.com/create/posters/" target="_blank">
-                    <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Posters</p>
-                        <i class="fa fa-external-link fa-3x action"></i>
-                    </div>
-                </a>
-                <div class="meta hidden">
-                    <p>posters</p>
-                    <p>technology</p>
-                    <p>design</p>
-                    <p>graphic</p>
-                    <p>407</p>
-                    <p>canva.com</p>
-                </div>
-            </div>
-            <div class="mix technology interviews data-summary 407 408" data-name="OTranscribe">
-                <img src="./img/otranscribe-icon.png" alt="otranscribe logo">
-                <h2>OTranscribe</h2>
-                <p>Free web app to take the pain out of transcribing.</p>
-                <a href="http://otranscribe.com/" target="_blank">
-                    <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Interviews, Data Summary</p>
-                        <i class="fa fa-external-link fa-3x action"></i>
-                    </div>
-                </a>
-                <div class="meta hidden">
-                    <p>interviews</p>
-                    <p>technology</p>
-                    <p>transcribe</p>
-                    <p>otranscribe</p>
-                    <p>transcribing</p>
-                    <p>transcription</p>
-                    <p>407</p>
-                    <p>408</p>
-                    <p>data summary</p>
-                </div>
-            </div>
-            <div class="mix technology interviews data-summary 407 408" data-name="Wreally Transcribe">
-                <img src="./img/wreally_logo.png" alt="wreally logo">
-                <h2>Wreally Transcribe</h2>
-                <p>Free web app to take the pain out of transcribing.</p>
-                <a href="https://transcribe.wreally.com/" target="_blank">
-                    <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Interviews, Data Summary</p>
-                        <i class="fa fa-external-link fa-3x action"></i>
-                    </div>
-                </a>
-                <div class="meta hidden">
-                    <p>interviews</p>
-                    <p>technology</p>
-                    <p>transcribe</p>
-                    <p>transcribing</p>
-                    <p>transcription</p>
-                    <p>wreally</p>
-                    <p>407</p>
-                    <p>408</p>
-                    <p>data summary</p>
-                </div>
-            </div>
-            <div class="mix technology interviews data-collection 407" data-name="TapeACall">
-                <img src="./img/icon_tapeacall.png" alt="tapeacall logo">
-                <h2>TapeACall</h2>
-                <p>Record iPhone and Android calls.</p>
-                <a href="https://www.tapeacall.com/" target="_blank">
-                    <div class="mix-hover hidden">
-                        <p><i class="fa fa-tags"></i> Interviews, Data Collection</p>
-                        <i class="fa fa-external-link fa-3x action"></i>
-                    </div>
-                </a>
-                <div class="meta hidden">
-                    <p>interviews</p>
-                    <p>technology</p>
-                    <p>recording</p>
-                    <p>audio</p>
-                    <p>phone call</p>
-                    <p>tapeacall</p>
-                    <p>data collection</p>
-                    <p>407</p>
-                    <p>408</p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
         
         <div class="flex-container group">
