@@ -125,7 +125,7 @@ resources:
     type: internal pages
 rubrics:
   - title: Final MP Rubric
-    subtitle:
+    subtitle: "Complete rubric for the final Master's Project"
     icon_path: /img/rubric.png
     link_path:
     filters:
@@ -133,8 +133,8 @@ rubrics:
       - '407'
       - '408'
       - research questions
-      - introduction
       - abstract
+      - introduction
       - literature review
       - data collection
       - data summary
@@ -272,12 +272,12 @@ tools:
 <html lang="en-US">
 <head>
     <title>MSHE Research Resources and Aids</title>
-    <meta name="author" content="Derek Thurber">
-    <meta name="description" content="A Page on Technology Tools and Resources for the Master of Science in Higher Education Administration and Policy program in the School of Education and Social Policy at Northwestern University">
+    <meta name="author" content="Derek Thurber" />
+    <meta name="description" content="A Page on Technology Tools and Resources for the Master of Science in Higher Education Administration and Policy program in the School of Education and Social Policy at Northwestern University" />
     
-    <link rel="stylesheet" type="text/css" href="./css/reset.css"></link>
-    <link rel="stylesheet" type="text/css" href="./css/base.css"></link>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/base.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script async="" defer="" src="//survey.g.doubleclick.net/async_survey?site=uenjeajg5mgbw"></script>
@@ -297,7 +297,7 @@ tools:
     <section class="hero" id="top">
     <div class="container wide">
         <div class="title">
-            <h1>MP Aids and Resources</h1><br>
+            <h1>MP Aids and Resources</h1><br />
             
             <ul>
                 <!--<li id="show-all" class="filter" data-filter="all">Show All</li>-->
@@ -306,7 +306,7 @@ tools:
                 <!--<li id="search-button">Search <i id="search-chevron" class="fa fa-chevron-down"></i></li>-->
             </ul>
             <p>Jump to: <a href="#aids" class="smoothScroll">Aids and Resources</a> | <a href="#resources" class="smoothScroll">External Resources</a> | <a href="#rubrics" class="smoothScroll">Rubrics</a> | <a href="#technology" class="smoothScroll">Technology Tools</a> | <a href="#templates" class="smoothScroll">Templates</a></p>
-            <input id="input" type="text" placeholder="Start typing to search">
+            <input id="input" type="text" placeholder="Start typing to search" />
         </div>
     </div>
     </section>
@@ -341,7 +341,7 @@ tools:
             </div>
             
             <div id="search" class="hidden">
-                <input id="input" type="text" placeholder="Start typing to search">
+                <input id="input" type="text" placeholder="Start typing to search" />
             </div>
         </div>
     </section>
@@ -351,7 +351,7 @@ tools:
             <h3 class="flex-header editable" id="aids">Aids and Handouts</h3>
             {% for item in page.aids %}
             <div class="mix {{ item.filters | join: ',' | remove: ' ' | split: ',' | join: ' ' }}" data-name="{{ item.title }}">
-                {% if item.icon_path != null %}<img src=".{{ item.icon_path }}" alt="resource type icon">{% endif %}
+                {% if item.icon_path != null %}<img src=".{{ item.icon_path }}" alt="resource type icon" />{% endif %}
                 <h2>{{ item.title }}</h2>
                 <p>{{ item.subtitle }}</p>
                 {% if item.type == 'external link' %}<a href="{{ item.link_path }}" target="_blank">{% else %}<a href="{{ item.link_path }}">{% endif %}
@@ -364,7 +364,7 @@ tools:
                 <div class="meta hidden">
                     <p>{{ item.filters }}</p>
                 </div>
-            </div>
+            </a></div>
             {% endfor %}
         </div>
         
@@ -372,7 +372,7 @@ tools:
             <h3 class="flex-header editable" id="resources">External Resources</h3>
             {% for item in page.resources %}
             <div class="mix {{ item.filters | join: ',' | remove: ' ' | split: ',' | join: ' ' }}" data-name="{{ item.title }}">
-                {% if item.icon_path != null %}<img src=".{{ item.icon_path }}" alt="resource type icon">{% endif %}
+                {% if item.icon_path != null %}<img src=".{{ item.icon_path }}" alt="resource type icon" />{% endif %}
                 <h2>{{ item.title }}</h2>
                 <p>{{ item.subtitle }}</p>
                 {% if item.type == 'external link' %}<a href="{{ item.link_path }}" target="_blank">{% else %}<a href="{{ item.link_path }}">{% endif %}
@@ -385,7 +385,7 @@ tools:
                 <div class="meta hidden">
                     <p>{{ item.filters }}</p>
                 </div>
-            </div>
+            </a></div>
             {% endfor %}
         </div>
         
@@ -393,7 +393,7 @@ tools:
             <h3 class="flex-header editable" id="rubrics">Rubrics</h3>
             {% for item in page.rubrics %}
             <div class="mix {{ item.filters | join: ',' | remove: ' ' | split: ',' | join: ' ' }}" data-name="{{ item.title }}">
-                {% if item.icon_path != null %}<img src=".{{ item.icon_path }}" alt="resource type icon">{% endif %}
+                {% if item.icon_path != null %}<img src=".{{ item.icon_path }}" alt="resource type icon" />{% endif %}
                 <h2>{{ item.title }}</h2>
                 <p>{{ item.subtitle }}</p>
                 {% if item.type == 'external link' %}<a href="{{ item.link_path }}" target="_blank">{% else %}<a href="{{ item.link_path }}">{% endif %}
@@ -406,7 +406,7 @@ tools:
                 <div class="meta hidden">
                     <p>{{ item.filters }}</p>
                 </div>
-            </div>
+            </a></div>
             {% endfor %}
         </div>
         
@@ -414,7 +414,7 @@ tools:
             <h3 class="flex-header editable" id="technology">Technology Tools</h3>
             {% for item in page.tools %}
             <div class="mix {{ item.filters | join: ',' | remove: ' ' | split: ',' | join: ' ' }}" data-name="{{ item.title }}">
-                {% if item.icon_path != null %}<img src=".{{ item.icon_path }}" alt="resource type icon">{% endif %}
+                {% if item.icon_path != null %}<img src=".{{ item.icon_path }}" alt="resource type icon" />{% endif %}
                 <h2>{{ item.title }}</h2>
                 <p>{{ item.subtitle }}</p>
                 {% if item.type == 'external link' %}<a href="{{ item.link_path }}" target="_blank">{% else %}<a href="{{ item.link_path }}">{% endif %}
@@ -427,14 +427,14 @@ tools:
                 <div class="meta hidden">
                     <p>{{ item.filters }}</p>
                 </div>
-            </div>
+            </a></div>
             {% endfor %}
         </div>
         
         <div class="flex-container group">
             <h3 class="flex-header editable" id="templates">Templates</h3>
             <div class="mix templates conclusions data-summary abstracts data-collection lit-review data-analysis 406 407 408" data-name="MP APA Template">
-                <img src="./img/sheet.png" alt="document icon">
+                <img src="./img/sheet.png" alt="document icon" />
                 <h2>MP APA Template</h2>
                 <p>Word document template for the Master's Project.</p>
                 <a href="https://northwestern.box.com/shared/static/lgqwax92o5crl4xnenkn.docx">
