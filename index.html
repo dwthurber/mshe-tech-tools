@@ -348,7 +348,7 @@ tools:
     <section class="main">
     <div class="container">
         <div class="flex-container group">
-            <h3 class="flex-header" id="aids">Aids and Resources</h3>
+            <h3 class="flex-header editable" id="aids">Aids and Handouts</h3>
             {% for item in page.aids %}
             <div class="mix {{ item.filters | join: ',' | remove: ' ' | split: ',' | join: ' ' }}" data-name="{{ item.title }}">
                 {% if item.icon_path != null %}<img src=".{{ item.icon_path }}" alt="resource type icon">{% endif %}
@@ -369,7 +369,7 @@ tools:
         </div>
         
         <div class="flex-container group">
-            <h3 class="flex-header" id="resources">External Resources</h3>
+            <h3 class="flex-header editable" id="resources">External Resources</h3>
             {% for item in page.resources %}
             <div class="mix {{ item.filters | join: ',' | remove: ' ' | split: ',' | join: ' ' }}" data-name="{{ item.title }}">
                 {% if item.icon_path != null %}<img src=".{{ item.icon_path }}" alt="resource type icon">{% endif %}
@@ -390,7 +390,7 @@ tools:
         </div>
         
         <div class="flex-container group">
-            <h3 class="flex-header" id="rubrics">Rubrics</h3>
+            <h3 class="flex-header editable" id="rubrics">Rubrics</h3>
             {% for item in page.rubrics %}
             <div class="mix {{ item.filters | join: ',' | remove: ' ' | split: ',' | join: ' ' }}" data-name="{{ item.title }}">
                 {% if item.icon_path != null %}<img src=".{{ item.icon_path }}" alt="resource type icon">{% endif %}
@@ -411,7 +411,7 @@ tools:
         </div>
         
         <div class="flex-container group">
-            <h3 class="flex-header" id="technology">Technology Tools</h3>
+            <h3 class="flex-header editable" id="technology">Technology Tools</h3>
             {% for item in page.tools %}
             <div class="mix {{ item.filters | join: ',' | remove: ' ' | split: ',' | join: ' ' }}" data-name="{{ item.title }}">
                 {% if item.icon_path != null %}<img src=".{{ item.icon_path }}" alt="resource type icon">{% endif %}
@@ -432,7 +432,7 @@ tools:
         </div>
         
         <div class="flex-container group">
-            <h3 class="flex-header" id="templates">Templates</h3>
+            <h3 class="flex-header editable" id="templates">Templates</h3>
             <div class="mix templates conclusions data-summary abstracts data-collection lit-review data-analysis 406 407 408" data-name="MP APA Template">
                 <img src="./img/sheet.png" alt="document icon">
                 <h2>MP APA Template</h2>
